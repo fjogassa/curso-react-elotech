@@ -3,6 +3,7 @@ import './App.css'
 import Cabecalho from './Cabecalho.jsx'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Home.jsx";
+import Configuracao from "./Configuracao.jsx";
 
 class App extends Component {
 
@@ -27,6 +28,7 @@ class App extends Component {
             <Cabecalho logged={this.state.logged} />
             <Switch>
               <Route path="/" exact component={Home} />
+              <Route path="/configuracao" exact component={Configuracao} />
             </Switch>
           </div>
         </BrowserRouter>
